@@ -41,7 +41,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
-    height: 180px;
+    height: auto;
     flex: 1;
     justify-content: space-between;
   }
@@ -51,6 +51,9 @@ main {
       main > div#MyProjects, samp {
         display: flex;
         flex-wrap: wrap;
+      }
+      .comentario {
+        padding: 15px 0
       }
         div.header, .footer  {
           display: flex;
@@ -69,7 +72,7 @@ main {
 
         span {
           display: flex;
-          gap: 15px;
+          gap: 10px;
           align-items: center;
         }
 
@@ -214,6 +217,14 @@ article {
     }
     #technology{
       text-align: center; 
+    }
+    #MyProjects > div.projetos {
+      height: auto;
+    }
+    .projetos .footer, span {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 5px;
     }
     #technology > h3 {
       margin-left: 10px;
