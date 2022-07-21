@@ -5,48 +5,177 @@
 }
 
 :root {
-  --body-bg-color: #22212C;
-  --text-color: #837E9F;
-  --bg-cards: #302F3D;
-  --bg-techs: #CB92B1;
+  --body-bg-color: #387373;
+  --text-color: #1e292b;
+  --bg-cards: #E4F2E7;
+  --bg-techs: #93BFB7;
 }
 
 body{ 
-  display: flex; /* display */
+  display: flex; 
 
+  font-family: 'Roboto', sans-serif;
+
+  color: var(--text-color);
   background-color: var(--body-bg-color);
 }
 
-section {
+main {
   display: flex;
 
+  width: 100vw;
+
+  flex-direction: column;
+  
+
+  margin: 12.5px;
+  padding: 12.5px;
 }
+  main > h2, #MyProjects > div {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 1rem 1rem .3rem 1rem;
+    background-color: var(--bg-cards);
+  } 
+
+  #MyProjects > div {
+    min-width: 25vw;
+    height: 24vh;
+    flex: 1;
+  }
+    main > h2{
+      padding: 1rem;
+    }  
+      main > div#MyProjects, samp {
+        display: flex;
+        gap: 1%;
+        flex-wrap: wrap;
+      }
+        div.header, .footer  {
+          display: flex;
+          gap: 5%;
+          margin: 1rem 0 10px 0;
+        }
+
+        .footer {
+          justify-content: space-between;
+        }
+
+        .star::after, .branch::after{
+          content: '100';
+        }
 
 
+        span {
+          display: flex;
+          gap: 15px;
+          align-items: center;
+        }
+
+        span > .circulo {
+          width: 15px;
+          height: 15px;
+          background-color: gold;
+          border-radius: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+  display: flex;
+
+  flex-direction: column;
+}
+  article > div {
+    width: 255px;
+
+    margin: .6rem .6rem .6rem 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+
+    background-color: var(--bg-cards);
+  }
+    article > div > h2, h3 {
+      padding: 0 125px 15px 0;
+    }
+      article > div > ul,li, a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+
+/* Perfil */
+#profile{
+  margin-top: 2rem;
+  
+  text-align: center;
+}
+  #profile > img {
+    width: 170px;
+
+    margin: 15px auto;
+
+    border-radius: 100%;
+    border: solid 4px rgb(196, 47, 255);
+  }
+
+  
+/* Navegação entre Links */
+#nav li {
+  height: 50px;
+
+  padding: 5px 0 0 15px;
+  margin: 10px 0;
+
+  background-color: var(--bg-techs);
+}
+  #nav li, a {
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+
+    border-radius: 9px;
+  }
 
 
 /* #technology */
 #technology{
-  width: 250px;
+  text-align: center; 
+}
+  #technology > img{
+    width: 45px;
 
-  padding: .6rem;
+    margin: 5px;
 
-  text-align: center;
+    cursor: pointer;
+  }
 
-  border-radius: 15px;
-  background-color: var(--bg-cards);
+
+/* Experiencia */
+#xp > p {
+  padding: 5px 10px;
 }
 
-div#technology h3{
-  padding-right: 125px;
 
-  color: white;
+/* Escolariedade e conhecimento */
+#school h4 {
+  margin: 5px 0 5px -10px;
 }
-
-#technology > img{
-  width: 45px;
-  
-  margin: 5px;
-
-  cursor: pointer;
-}
+  #school ul > li {
+    padding: 5px 0 0 15px;
+    font-family: 'Roboto Mono', monospace;
+  }

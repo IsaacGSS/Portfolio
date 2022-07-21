@@ -12,9 +12,18 @@
         title="HTML-5" 
         style="width: 50px;">     
 
-<!-- ## 💻 Funcionalidades
-> ### 
-
+## 💻 Funcionalidades
+> ### **Desing**
+> * Colors </br>
+> ```CSS
+>  :root {
+>  --body-bg-color: #387373;
+>  --text-color: #1e292b;
+>  --bg-cards: #E4F2E7;
+>  --bg-techs: #93BFB7;
+>  }
+> ```
+> Todo o desing foi baseado na base do desafio Discoverf da Rocketseat, foi usado o <a href="https://www.figma.com/file/soQBxmKJzp1aF6zj0SXBoG/DD-%2F-Portfolio-(Copy)?node-id=3%3A2">Figma</a>, a paleta de cores foi retirado do <a href="https://color.adobe.com/pt/explore">Adobe Colors</a>.
 ## 👀 Preview
 
->  -->
+> <img src="assets/md/Captura%20da%20Web_20-7-2022_23316_127.0.0.1.jpeg">
