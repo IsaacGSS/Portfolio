@@ -23,10 +23,9 @@ body{
 main {
   display: flex;
 
-  width: 100vw;
+  width: 100%;
 
   flex-direction: column;
-  
 
   margin: 12.5px;
   padding: 12.5px;
@@ -34,21 +33,23 @@ main {
   main > h2, #MyProjects > div {
     border-radius: 10px;
     margin: 15px;
-    padding: 1rem 1rem .3rem 1rem;
+    padding: .5rem 1.5rem;
     background-color: var(--bg-cards);
   } 
 
   #MyProjects > div {
-    min-width: 25vw;
-    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 180px;
     flex: 1;
+    justify-content: space-between;
   }
     main > h2{
       padding: 1rem;
     }  
       main > div#MyProjects, samp {
         display: flex;
-        gap: 1%;
         flex-wrap: wrap;
       }
         div.header, .footer  {
@@ -81,27 +82,16 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 article {
   display: flex;
 
   flex-direction: column;
 }
   article > div {
-    width: 255px;
-
-    margin: .6rem .6rem .6rem 1rem;
+    width: 16rem;
+    flex-wrap: wrap;
+    
+    margin: 1rem .6rem;
     padding: 1rem;
     border-radius: 15px;
 
@@ -131,24 +121,31 @@ article {
     border-radius: 100%;
     border: solid 4px rgb(196, 47, 255);
   }
+    #profile > h1 {
+      font-size: 2rem;
+    }
+    #profile > p {
+      font-size: .9rem;
+      font-family: 'Roboto mono', monospace;
+    }
 
   
 /* Navegação entre Links */
-#nav li {
-  height: 50px;
-
-  padding: 5px 0 0 15px;
-  margin: 10px 0;
-
-  background-color: var(--bg-techs);
-}
   #nav li, a {
     display: flex;
+
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    margin: 10px 0; 
+
     align-items: center;
-    
     gap: 10px;
 
+    cursor: pointer;
     border-radius: 9px;
+
+    background-color: var(--bg-techs);
   }
 
 
@@ -178,4 +175,51 @@ article {
   #school ul > li {
     padding: 5px 0 0 15px;
     font-family: 'Roboto Mono', monospace;
+  }
+
+  
+  
+  @media only screen and (max-width: 820px) {
+    body {
+      flex-wrap: wrap;
+    }
+
+    article {
+      display: flex;
+
+      padding: 1rem;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      justify-content: space-evenly;
+    }
+
+    article > div {
+      width: 40%;
+    }
+
+    #nav {
+      margin-top: 2rem;
+    }
+
+    #school{
+      width: 88%;
+    }
+  }
+
+  @media only screen and (max-width: 590px) {
+    article > div {
+      width: 90%;
+    }
+    #technology{
+      text-align: center; 
+    }
+    #technology > h3 {
+      margin-left: 10px;
+      text-align: left;
+    }
+    #school{
+      width: 90%;
+    }
   }
